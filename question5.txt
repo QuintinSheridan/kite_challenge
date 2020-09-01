@@ -1,0 +1,20 @@
+Please consider the following models. Assume these exist in an SQL database.
+
+/*
+Company
+  - id
+  - name (string)
+  - description (text)
+  - logo_url (string)
+  - score (int)
+  - has_many: funding_rounds
+
+FundingRound
+  - id (int)
+  - funding_in_usd (float)
+  - company_id
+*/
+
+You could make the id an autoincrementing integer key and make the Company table sorted by id.  This would speed up searching by id.
+
+I honestly am not sure what you are asking here. This question is vague.
